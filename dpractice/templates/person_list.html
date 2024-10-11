@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Person</title>
+
+    <!--CSS Links-->
+    <link rel="stylesheet" href="{% static 'css/person_list.css' %}">
+
+</head>
+<body>
+    <div>
+        <h1>Person List</h1>
+        <p>{{ person.name }}</p>
+    </div>
+</body>
+</html>
