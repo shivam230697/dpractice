@@ -12,7 +12,11 @@
 <body>
     <div>
         <h1>Person List</h1>
-        <p>{{person}}</p>
+        <ul>
+            {% for person_data in person %}
+            <li>{{ person_data.name }}</li>
+            {% endfor %}
+        </ul>
     </div>
 </body>
 </html>
