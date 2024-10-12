@@ -4,6 +4,6 @@ from .models import Person
 # Create your views here.
 
 def person_list(request):
-    person = Person.objects.all()[0]
+    person = Person.objects.all()
     context = {'person': person}
     return render(request, 'person_list.html', context)
